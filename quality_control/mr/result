@@ -1,0 +1,573 @@
+None	165
+u"Colt's Neck"	1
+u'Addison'	1
+u'Aiken'	1
+u'Alameda'	1
+u'Alexandria'	3
+u'Alhambra'	1
+u'Aliso Viejo'	1
+u'Alpharetta'	2
+u'Alpine'	1
+u'Anaheim'	2
+u'Anderson'	1
+u'Andover'	1
+u'Annapolis'	2
+u'Apalachicola'	3
+u'Apex'	1
+u'Aptos'	1
+u'Arcata'	1
+u'Archdale'	1
+u'Argonne'	1
+u'Arlington'	3
+u'Artesia'	1
+u'Arvada'	2
+u'Asbury Park'	1
+u'Asheville'	3
+u'Atascadero'	1
+u'Atlanta'	7
+u'Augusta'	2
+u'Aurora'	2
+u'Austin'	3
+u'BILLINGS'	1
+u'BRONX'	1
+u'Baker City'	1
+u'Bakersfield'	1
+u'Ballwin'	1
+u'Baltimore'	4
+u'Basalt'	1
+u'Batesville'	1
+u'Baton Rouge'	1
+u'Beacon'	1
+u'Beaver Dam'	1
+u'Beaverton'	1
+u'Beckley'	1
+u'Belleview'	1
+u'Belleville'	2
+u'Bellevue'	6
+u'Bend'	1
+u'Beverly Hills'	1
+u'Bexley'	1
+u'Big Sky'	1
+u'Billings'	1
+u'Birmingham'	2
+u'Bloomfield'	1
+u'Bloomington'	3
+u'Blountville'	1
+u'Boca Raton'	1
+u'Boerne'	1
+u'Boise'	1
+u'Boston'	2
+u'Boulder'	1
+u'Bowie'	1
+u'Bowling Green'	2
+u'Boxford'	1
+u'Bradford'	1
+u'Bremen'	1
+u'Brookeville'	1
+u'Brookfield'	2
+u'Brookline'	1
+u'Brooklyn'	2
+u'Brunswick'	1
+u'Buffalo'	1
+u'Bullhead City'	1
+u'Burbank'	1
+u'Byron Center'	1
+u'Cairo'	1
+u'Camarillo'	1
+u'Cambridge'	1
+u'Campbell'	2
+u'Canmer'	1
+u'Canoga Park'	1
+u'Capital Heights'	1
+u'Capitola'	1
+u'Carlsbad'	1
+u'Carmel'	1
+u'Carson City'	1
+u'Carson'	1
+u'Cartersville'	1
+u'Cary'	1
+u'Castle Rock'	1
+u'Cedar Rapids'	1
+u'Centennial'	1
+u'Chandler'	2
+u'Chappaqua'	1
+u'Chariton'	1
+u'Charleston'	1
+u'Charlotte'	2
+u'Chatsworth'	1
+u'Chattanooga'	1
+u'Chesapeake'	1
+u'Chevy Chase'	1
+u'Cheyenne'	1
+u'Chicago'	8
+u'Clackamas'	2
+u'Claremore'	1
+u'Clarkston'	1
+u'Clearwater'	2
+u'Cleveland'	2
+u'Cloudland'	1
+u'Colchester'	1
+u'Collierville'	1
+u'Colorado Springs'	4
+u'Columbia'	3
+u'Columbus'	5
+u'Commmack'	1
+u'Concord'	3
+u'Conover'	1
+u'Conroe'	1
+u'Corpus Christi'	1
+u'Cortal Springs'	1
+u'Cranford'	1
+u'Crawfordville'	1
+u'Crookston'	2
+u'Crp Christi'	1
+u'Cumberland'	1
+u'Cumming'	1
+u'Dalhart'	1
+u'Dallas'	10
+u'Davie'	1
+u'Dayton'	1
+u'Daytona Beach Shores'	1
+u'Decatur'	1
+u'Deerfield Beach'	1
+u'Deland'	1
+u'Delray Beach'	1
+u'Dennard'	1
+u'Denver'	4
+u'Destrehan'	1
+u'Detroit'	1
+u'Donalsonville'	1
+u'Doraville'	1
+u'Dover'	1
+u'Downers Grove'	1
+u'Duluth'	2
+u'Duncan'	1
+u'Eagan'	1
+u'Eagle Bay'	1
+u'Eclectic'	1
+u'Edcouch'	1
+u'Edison'	1
+u'Egg Harbor Township'	1
+u'El Mirage'	1
+u'El Segundo'	1
+u'Elgin'	2
+u'Elida'	1
+u'Ellisville'	1
+u'Elmhurst'	1
+u'Elmont'	1
+u'Emmett'	1
+u'Everett'	1
+u'FORT WAYNE'	1
+u'Fairfax Station'	1
+u'Fairfield'	2
+u'Falls Church'	1
+u'Fayetteville'	1
+u'Federal Way'	1
+u'Fenton'	1
+u'Flat Rock'	1
+u'Folly Beach'	1
+u'Folsom'	1
+u'Forest Hill'	1
+u'Fort Lauderdale'	2
+u'Fort Pierce'	1
+u'Fort Wayne'	1
+u'Fountain Hills'	1
+u'Frankfort'	1
+u'Franklin'	2
+u'Freehold'	2
+u'Fruitport'	1
+u'Ft. Collins'	1
+u'Ft. Washington'	2
+u'Fullerton'	2
+u'Gainesville'	2
+u'Galt'	1
+u'Gambrills'	1
+u'Garland'	1
+u'Geneva'	1
+u'Georgetown'	2
+u'Gibsonia'	1
+u'Gilbert'	1
+u'Glastonbury'	1
+u'Glen Gardner'	1
+u'Glendora'	1
+u'Gloucester'	1
+u'Gorham'	1
+u'Grand Junction'	1
+u'Grand Prairie'	1
+u'Grand Rapids'	2
+u'Granite Falls'	1
+u'Grants Pass'	1
+u'Greencastle'	1
+u'Greensboro'	3
+u'Greenville'	1
+u'Greenwich'	2
+u'Greer'	1
+u'Grove'	1
+u'Guilford'	1
+u'HANOVER'	1
+u'Hahira'	1
+u'Hamilton'	3
+u'Hardy'	1
+u'Harrisburg'	1
+u'Harrisonburg'	1
+u'Hartford'	1
+u'Hartland'	1
+u'Harvard'	1
+u'Haslett'	1
+u'Haverhill'	1
+u'Heber City'	1
+u'Helena'	1
+u'Helotes'	1
+u'Hendersonville'	1
+u'Hercules'	1
+u'Hermitage'	1
+u'Hershey'	1
+u'High Point'	2
+u'High Ridge'	1
+u'Highland Falls'	1
+u'Highland Park'	1
+u'Highlands'	1
+u'Hillside'	1
+u'Hilton Head Island'	1
+u'Hinsdale'	1
+u'Hodgen'	1
+u'Hoffman Estates'	1
+u'Honolulu'	1
+u'Hooksett'	1
+u'Houston'	17
+u'Hubertus'	1
+u'Huddleston'	2
+u'Huntsville'	1
+u'INDIANAPOLIS'	1
+u'Ignacio'	1
+u'Indanapolis'	1
+u'Independence'	1
+u'Indianapolis'	2
+u'Industrial Airport'	1
+u'Irvine'	2
+u'Irving'	1
+u'Jackson'	1
+u'Jacksonville Beach'	1
+u'Jacksonville'	3
+u'Janesville'	1
+u'Jasper'	2
+u'Jericho'	1
+u'Joelton'	1
+u'Joliet'	1
+u'Kailua'	1
+u'Kansas City'	3
+u'Katy'	1
+u'Kernersville'	1
+u'Kerrville'	1
+u'Key West'	1
+u'Kimberton'	1
+u'Kings Mountain'	1
+u'Kirkland'	1
+u'Kissimmee'	1
+u'Kittery'	1
+u'Klamath Falls'	1
+u'Knoxville'	3
+u'Kokomo'	1
+u'Krum'	1
+u'La Jolla'	1
+u'La Mesa'	2
+u'La Puente'	1
+u'Lacey'	1
+u'Laconia'	1
+u'Ladera Ranch'	1
+u'Lafayette'	3
+u'Lake Hopatcong'	1
+u'Lake Katrine'	1
+u'Lakeland'	1
+u'Lakeway'	1
+u'Lakewood'	1
+u'Lancaster'	1
+u'Las Vegas'	8
+u'Lascassas'	1
+u'Laurel'	1
+u'Layton'	1
+u'Lebanon'	1
+u'Ledgewood'	1
+u'Leesburg'	1
+u'Lenox'	1
+u'Lewistown'	1
+u'Liberty Center'	1
+u'Liberty'	1
+u'Lincoln'	1
+u'Lincolnshire'	1
+u'Lincolnton'	1
+u'Lithia Springs'	1
+u'Livermore'	1
+u'Liverpool'	1
+u'London'	1
+u'Long Beach'	1
+u'Los Alamitos'	2
+u'Los Angeles'	8
+u'Louisville'	3
+u'Lutherville'	1
+u'Luverne'	1
+u'Madison'	2
+u'Madisonville'	1
+u'Mahwah'	1
+u'Maitland'	2
+u'Malabar'	1
+u'Malden'	1
+u'Malvern'	1
+u'Manchester'	1
+u'Manistique'	1
+u'Mankato'	1
+u'Marble Falls'	1
+u'Marble Hill'	1
+u'McLean'	1
+u'Medfield'	1
+u'Medical Lake'	1
+u'Medina'	1
+u'Melrose'	1
+u'Mesa'	1
+u'Miami'	7
+u'Miamisburg'	1
+u'Middletown'	2
+u'Midland'	1
+u'Millersville'	1
+u'Milwaukee'	1
+u'Milwaukie'	1
+u'Minneapolis'	5
+u'Minong'	1
+u'Mira Loma'	1
+u'Miramar'	2
+u'Missoula'	1
+u'Modesto'	1
+u'Monticello'	1
+u'Moody'	1
+u'Mooresville'	1
+u'Mountain Home'	1
+u'Mountain View'	2
+u'Mt. Kisco'	2
+u'Mukilteo'	1
+u'Murray'	1
+u'Murrieta'	1
+u'Muskegon'	1
+u'Myrtle Beach'	2
+u'Mystic'	1
+u'Nacogdoches'	1
+u'Naples'	1
+u'Nevada City'	1
+u'New Baltimore'	1
+u'New Enterprise'	1
+u'New Lenox'	1
+u'New London'	1
+u'New Orleans'	1
+u'New York City'	2
+u'New York Ny'	1
+u'New York'	17
+u'Newark'	1
+u'Newport Beach'	1
+u'Newport'	1
+u'Newtown'	2
+u'Niwot'	1
+u'Norcross'	1
+u'Norfolk'	1
+u'North Fork'	1
+u'North Myrtle Beach'	1
+u'North Wales'	1
+u'Novi'	1
+u'Oak Creek'	1
+u'Oakland'	1
+u'Oceanside'	1
+u'Oklahoma City'	4
+u'Olathe'	2
+u'Omaha'	3
+u'Ontario'	1
+u'Orangeburg'	1
+u'Orem'	1
+u'Orrville'	1
+u'Oswego'	1
+u'Ottumwa'	1
+u'Overland Park'	3
+u'Owensboro'	3
+u'PHOENIX'	1
+u'Pacific Grove'	1
+u'Page'	1
+u'Painesville'	1
+u'Palo Alto'	1
+u'Paonia'	1
+u'Paris'	1
+u'Peabody'	1
+u'Pearland'	1
+u'Pendleton'	1
+u'Perrysburg'	1
+u'Philadelphia'	4
+u'Phoenix'	7
+u'Pine Bluff'	1
+u'Piscataway'	1
+u'Placentia'	1
+u'Plano'	1
+u'Pleasanton'	1
+u'Plymouth'	2
+u'Port Jervis'	1
+u'Port Royal'	1
+u'Port Washington'	1
+u'Porterville'	1
+u'Portland'	6
+u'Potomac'	1
+u'Princeton'	2
+u'Providence'	1
+u'Pueblo'	1
+u'Punta Gorda'	1
+u'Queen Creek'	1
+u'Raleigh'	3
+u'Rancho Cordova'	1
+u'Rancho Cucamonga'	1
+u'Raytown'	1
+u'Rear  Leominster'	1
+u'Red Bluff'	1
+u'Redbud'	1
+u'Redway'	1
+u'Refton'	1
+u'Reston'	1
+u'Ridgefield'	3
+u'Rigeland'	1
+u'Rindge'	1
+u'Riverton'	1
+u'Rochester Hills'	1
+u'Rochester'	4
+u'Rock Falls'	1
+u'Rock Hill'	2
+u'Rocky Mount'	1
+u'Rome'	1
+u'Romeoville'	1
+u'Ronkonkoma'	1
+u'Roswell'	1
+u'Round Lake'	1
+u'Russellville'	1
+u'Rye Brook'	1
+u'S. Main Lindsay'	1
+u'SUNNYVALE'	1
+u'Sacramento'	7
+u'Salem'	2
+u'San Antonio'	4
+u'San Diego'	7
+u'San Francisco'	6
+u'San Fransisco'	1
+u'San Jose'	2
+u'San Pedro'	1
+u'Sanford'	2
+u'Santa Ana'	1
+u'Santa Barbara'	1
+u'Santa Clara'	1
+u'Santa Fe'	1
+u'Santa Monica'	2
+u'Santa Rosa'	1
+u'Sarasota'	2
+u'Sault Ste. Marie'	1
+u'Sausalito'	1
+u'Schaumburg'	1
+u'Schofield'	1
+u'Scottsdale'	4
+u'Scranton'	1
+u'Seattle'	8
+u'Seneca'	1
+u'Shawnee Mission'	1
+u'Shawnee'	1
+u'Sheffield'	1
+u'Shelton'	1
+u'Sherman Oaks'	1
+u'Shoreham'	1
+u'Shreveport'	1
+u'Silver Spring'	2
+u'Sloansville'	1
+u'Smyrna'	1
+u'Snellville'	1
+u'Somerset'	1
+u'Sonora'	1
+u'South Boston'	1
+u'South Hill'	1
+u'South Range'	1
+u'South San Francisco'	1
+u'South'	1
+u'Sparks'	1
+u'Spokane'	1
+u'Spring Lake'	1
+u'Spring'	1
+u'Springfield'	1
+u'Springtown'	1
+u'St Louisville'	1
+u'St Petersburg'	1
+u'St. Germain'	1
+u'St. Johns'	1
+u'St. Louis'	3
+u'St. Marys'	1
+u'St. Paul'	1
+u'St. Petersburg'	1
+u'Stanford'	1
+u'Steamboat Springs'	1
+u'Stow'	1
+u'Stowe'	1
+u'Sugar Land'	1
+u'Sullivan'	1
+u'Sunnyside'	1
+u'Swampscott'	1
+u'Sylva'	1
+u'Syossett'	1
+u'Tamaqua'	1
+u'Tampa'	2
+u'Temecula'	1
+u'The Woodlands'	1
+u'Thomaston'	1
+u'Thousand Oaks'	1
+u'Timonium'	1
+u'Tomball'	1
+u'Topeka'	1
+u'Tucson'	3
+u'Tulsa'	1
+u'Tustin'	1
+u'U. S.'	1
+u'Union City'	1
+u'Upland'	4
+u'Upper Marlboro'	1
+u'Uxbridge'	1
+u'VERNON'	1
+u'Valdosta'	1
+u'Valencia'	3
+u'Valley Springs'	1
+u'Valley Stream'	1
+u'Vernon'	1
+u'Vienna'	2
+u'Villanova'	1
+u'Virginia Beach'	1
+u'Virginia Brooks Brothers Locationh Locations Beach'	1
+u'Vulcan'	1
+u'WASHOUGAL'	1
+u'Waitsfield'	1
+u'Waldorf'	1
+u'Walker'	1
+u'Walla Walla'	1
+u'Walnut Creek'	1
+u'Walpole'	1
+u'Waltham'	1
+u'Washington Dc'	8
+u'Washington'	1
+u'Waukesha'	2
+u'Waynesboro'	1
+u'Weed'	1
+u'Weslaco'	1
+u'West Covina'	1
+u'West Hills'	1
+u'West Milford'	1
+u'West Palm Beach'	1
+u'Westminster'	1
+u'Weston'	1
+u'Wheat Ridge'	1
+u'Wheeling'	1
+u'White Bear Lake'	1
+u'Whittier'	1
+u'Wichita Falls'	1
+u'Wilmington'	1
+u'Windham'	1
+u'Winston'	1
+u'Winter Haven'	1
+u'Woodbury'	1
+u'Woodinville'	1
+u'Woodside'	2
+u'Woodstock'	1
+u'Xenia'	1

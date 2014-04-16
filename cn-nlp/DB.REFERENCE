@@ -1,0 +1,55 @@
+company
+
++--------------+--------------+------+-----+---------+----------------+
+| Field        | Type         | Null | Key | Default | Extra          |
++--------------+--------------+------+-----+---------+----------------+
+| id           | int(11)      | NO   | PRI | NULL    | auto_increment |
+| symbol       | varchar(255) | YES  |     | NULL    |                |
+| short_name   | varchar(255) | YES  |     | NULL    |                |
+| full_name    | varchar(255) | YES  |     | NULL    |                |
+| numeric_code | varchar(64)  | YES  |     | NULL    |                |
++--------------+--------------+------+-----+---------+----------------+
+
+news_comp_mapping
+
++------------+-------------+------+-----+---------+----------------+
+| Field      | Type        | Null | Key | Default | Extra          |
++------------+-------------+------+-----+---------+----------------+
+| id         | int(11)     | NO   | PRI | NULL    | auto_increment |
+| news_id    | int(11)     | NO   |     | NULL    |                |
+| quote      | varchar(50) | NO   | MUL | NULL    |                |
+| symbol     | varchar(50) | NO   | MUL | NULL    |                |
+| media_date | timestamp   | NO   | MUL | NULL    |                |
++------------+-------------+------+-----+---------+----------------+
+
+mysql> describe news_preprocessing_daily;
++-----------------------------+--------------+------+-----+---------+----------------+
+| Field                       | Type         | Null | Key | Default | Extra          |
++-----------------------------+--------------+------+-----+---------+----------------+
+| id                          | int(11)      | NO   | PRI | NULL    | auto_increment |
+| event_id                    | int(11)      | YES  | MUL | NULL    |                |
+| story_id                    | int(11)      | YES  |     | NULL    |                |
+| no_of_stories               | int(11)      | YES  |     | NULL    |                |
+| title                       | varchar(255) | YES  |     | NULL    |                |
+| abstract                    | text         | YES  |     | NULL    |                |
+| content                     | text         | YES  |     | NULL    |                |
+| source                      | varchar(200) | YES  |     | NULL    |                |
+| media_date                  | timestamp    | YES  | MUL | NULL    |                |
+| revised_title               | varchar(200) | YES  |     | NULL    |                |
+| title_seg                   | varchar(200) | YES  |     | NULL    |                |
+| title_pos                   | varchar(200) | YES  |     | NULL    |                |
+| title_parser                | varchar(200) | YES  |     | NULL    |                |
+| title_dep                   | varchar(200) | YES  |     | NULL    |                |
+| title_ner                   | varchar(200) | YES  |     | NULL    |                |
+| quotes                      | varchar(50)  | YES  |     | NULL    |                |
+| no_of_quotes                | int(4)       | YES  |     | NULL    |                |
+| contains_blank              | tinyint(1)   | YES  |     | NULL    |                |
+| contains_colon              | tinyint(1)   | YES  |     | NULL    |                |
+| contains_hyphen             | tinyint(1)   | YES  |     | NULL    |                |
+| contains_zhengquan          | tinyint(1)   | YES  |     | NULL    |                |
+| contains_quote_before_colon | tinyint(1)   | YES  |     | NULL    |                |
+| is_news_comp_mapping_done   | tinyint(1)   | YES  |     | NULL    |                |
+| is_event                    | tinyint(1)   | YES  |     | NULL    |                |
++-----------------------------+--------------+------+-----+---------+----------------+
+24 rows in set
+

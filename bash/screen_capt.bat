@@ -1,0 +1,1 @@
+IECapt --url=http://www.baidu.com/ --out=baidu.com.png

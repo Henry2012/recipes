@@ -52,3 +52,37 @@ coverage.xml
 # Sphinx documentation
 docs/_build/
 
+# io
+io/*
+*/io/*
+*/*/io/*
+
+# eclipse settings
+*.resources.prefs
+
+# CORPUS
+CORPUS/*
+
+# private documents
+DOC/*
+DMP/*
+
+# all txt, rar, tar.gz, xlsx...
+*.txt
+*.rar
+*.tar.gz
+*.xlsx
+*.docx
+*.cfg
+*.swf
+*.doc
+*.jpg
+*.zip
+*.json
+*.html
+*.7z
+*.png
+*.md
+
+
+

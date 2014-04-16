@@ -1,0 +1,16 @@
+1. main.sh
+2. Check results:
+    1) io/counters/companies, io/counters/tags
+    2) io/top10_news/companies, io/top10_news/tags
+3. rsync from azure bigmine to local
+4. send an email with top10 companies and tags
+5. draw tag cloud
+6. done
+
+涉及的数据库(azure)：
+    host = "esdev-mysql.cloudapp.net"
+    port = 3306
+    user = "esapp"
+    pwd = "esapp1"
+    dbname = "mscndemo"
+

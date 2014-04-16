@@ -1,0 +1,1 @@
+phantomjs rendering.js http://www.sse.com.cn/assortment/stock/list/stockdetails/company/index.shtml?COMPANY_CODE=600000 > 1.txt

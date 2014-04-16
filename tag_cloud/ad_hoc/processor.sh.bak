@@ -1,0 +1,6 @@
+#cat /mnt/data/qiqun.h/tag_cloud/io/zqsbw/$1.txt >> /mnt/data/qiqun.h/tag_cloud/io/merged/$1.txt
+#cat /mnt/data/qiqun.h/tag_cloud/io/zzw/$1.txt >> /mnt/data/qiqun.h/tag_cloud/io/merged/$1.txt
+python /mnt/data/qiqun.h/tag_cloud/entity_extractor.py $1
+python /mnt/data/qiqun.h/tag_cloud/preprocessor.py $1
+python /mnt/data/qiqun.h/tag_cloud/counter_processor.py $1
+python /mnt/data/qiqun.h/tag_cloud/featured_news_extractor.py $1

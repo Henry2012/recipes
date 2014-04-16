@@ -1,0 +1,1 @@
+IECapt --silent --url=http://www.leftfieldlabs.com --out=test.png

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "huobi_price_monitor.py", line 14, in <module>
+    import requests
+ImportError: No module named requests
+Traceback (most recent call last):
+  File "huobi_price_monitor.py", line 14, in <module>
+    import requests
+ImportError: No module named requests

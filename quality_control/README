@@ -1,0 +1,13 @@
+1. 利用js生成MongoDB的schema
+
+工具1：
+    https://github.com/skratchdot/mongodb-schema/
+    A schema analysis tool for MongoDB
+    
+    1. 下载schema.js
+    2. 在schema.js所在目录下运行mongo ec2-54-211-66-190.compute-1.amazonaws.com:27017/wrike -u guest -p wrike_guest --shell schema.js
+    3. db.news.schema({limit: -1})
+    
+    4. 注释
+        db.news.schema({limit: -1})表示处理所有的documents
+        db.users.schema()表示只处理50个documents
