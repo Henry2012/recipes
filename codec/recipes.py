@@ -22,6 +22,9 @@ import re
 #     1. Windows环境下将Unicode写入txt文本，不存在UnicodeEncodeError
 #     2. Ubuntu环境下利用相同的程序写文本，却存在问题
 #     3. 解决方案：首先将Unicode显式地转换成UTF-8或者在程序前加上如下的setdefaultencoding
+# Conversion between unicode and others:
+#     1. Convert unicode to others: encode
+#     2. Convert others to unicode: decode
 #===============================================================================
 
 import sys

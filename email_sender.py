@@ -13,6 +13,7 @@ Copyright (c) All Right Reserved, EverString Technology Ltd., http://www.everstr
 
 import os
 import smtplib
+import sys
 import mimetypes
 import email
 #from email import MIMEMultipart
@@ -97,11 +98,25 @@ def send_tag_cloud(text_body):
 if __name__ == "__main__":
     
     #===============================================================================
-    # 判断是否能够发给多个人
+    # 接受参数
     #===============================================================================
+    
+#     text_body = sys.argv[1]
+#     
+#     send_gmail(gmail_user='hansolo19871217',
+#                passwd="pi3.1415",
+#                recipient='815515379@qq.com',
+#                subject='cron output',
+#                body=text_body)
 
-    send_gmail(gmail_user='hendyhqq',
-               passwd="hqq?1123581321",
-               recipient='815515379@qq.com, cfan1987@yeah.net',
-               subject='词云图',
-               body="Test")
+    #===============================================================================
+    # 接受stdin
+    #===============================================================================
+    
+    text_body = sys.stdin.read()
+    print text_body
+    send_gmail(gmail_user='hansolo19871217',
+                passwd="pi3.1415",
+                recipient='815515379@qq.com',
+                subject='cron output',
+                body=text_body)
