@@ -110,6 +110,7 @@ print os.path.exists("../io/test.txt")
 
 # 创建目录
 # 实现mkdir -p
+# os.mkdir('test') 只用来创建一个文件夹
 if not os.path.exists("../io/test/sub_test3/"):
     os.makedirs("../io/test/sub_test3/")
 

@@ -1,8 +1,13 @@
-# -*- coding: utf-8 -*-
-# Author: Peng Chao
-# Copyright: EverString
-# Date:
-# Distributed under terms of the EverString license.
+#! /usr/bin/python
+#-*- coding:utf-8 -*-
+
+"""
+Author: Qiqun Han
+File: mapreduce.mr.py
+Description: this program
+Creation: 2014-4-17
+Revision: 2014-4-17
+"""
 
 import json
 import sys
@@ -10,7 +15,6 @@ from dumbo import run
 
 reload(sys)
 sys.setdefaultencoding('utf8')
-
 
 class Mapper(object):
     def __init__(self):

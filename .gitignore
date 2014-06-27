@@ -84,5 +84,8 @@ DMP/*
 *.png
 *.md
 
+# Everstring owned
+wrike_analysis/
+n2e/
 
 
