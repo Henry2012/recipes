@@ -44,3 +44,9 @@ if __name__ == "__main__":
     #print Levenshtein.hamming('aa12', 'adfc')
     
     #print Levenshtein.distance('abcd', 'adc')
+    
+    print Levenshtein.ratio('rockwell automation', 'engineeringtalk.com')
+    print Levenshtein.ratio('rockwell automation', 'softswitch.com')
+    print Levenshtein.ratio('rockwell automation', 'rockwellautomation.com')
+    
+    print Levenshtein.ratio('engineeringtalk.com', 'rockwell automation')

@@ -62,26 +62,6 @@ def get_page(url):
 #===============================================================================
 
 # print urllib.unquote("%E8%92%BC%E4%BA%95%E3%81%9D%E3%82%89")
-# print urllib.quote("金融")
-# print urllib.unquote("http://cikuapi.com/index.php?content=%E9%87%91%E8%9E%8D&bs=%E9%87%91%E8%9E%8D")
-# print urllib.unquote("http://cikuapi.com/index.php?content=%E9%93%B6%E8%A1%8C")
-# print urllib.quote("车")
-# print urllib.quote("汽车")
-# print urllib.unquote("%D4%D0%B8%BE%D7%B0%C7%EF%D7%B0").decode('gb2312')
-# print urllib.unquote('%E4%BC%98%E5%BC%82%E6%90%9C%E7%B4%A2')
-# print urllib.unquote('%E8%82%A1%E7%A5%A8')
-# print urllib.unquote('%E6%96%B0%E9%97%BB%E4%B8%AD%E5%BF%83')
-# print urllib.unquote('%E4%B8%8A%E5%B8%82%E5%85%AC%E5%8F%B8')
-# print urllib.unquote('UOR=www.sina.com.cn,weibo.com,login.sina.com.cn; ULV=1382080934381:170:4:1:5065101321270.885.1382080934301:1381168023905; __utma=182865017.727142032.1350394937.1350394937.1350394937.1; lzstat_uv=39671918401417150031|2893156; SINAGLOBAL=2675969447680.694.1358760785269; ssoln=elevenjunjun%40sohu.com; ALF=1384972407; wvr=5; USRHAWB=usrmdins311178; SUS=SID-1946327541-1382380407-JA-hp5ck-30dd68fb2fb4ae3a42801f63625d65f8; SUE=es%3Dbcd3baba51abc8ecbe77048142b18a1d%26ev%3Dv1%26es2%3D796d18e55c35a6933c170e86f0ecaecb%26rs0%3Dx3pJvNlHZVGmau7sW5ntkqFym4uTkqz48ruR0U1bmkKZ1uFZlQv8Da4RETZQurjpa5LpeuOe6AI5MVWZBO1nppFNJHnEh9TOTNpDped0dmTmlEA5ntexOe0cbZ%252BkYO7csyj7exaMjVkxZcaSUtYzZJfMpmb3%252BcP8rrAKTidDNZo%253D%26rv%3D0; SUP=cv%3D1%26bt%3D1382380407%26et%3D1382466807%26d%3Dc909%26i%3D17c4%26us%3D1%26vf%3D0%26vt%3D0%26ac%3D2%26st%3D0%26uid%3D1946327541%26name%3Delevenjunjun%2540sohu.com%2')
-# print urllib.unquote("%C3%C0%CE%B6")
-# print urllib.unquote('USB%5CVID_1782%26PID_5D03%5C6%2618D0524%260%2619761202 android-device 9U82604Ibggkfbj1QMbRwNzNVtHnF49t3ARTECNX3GunHPWv7nOdgNHZ2qWme8vGBsGa3cc6tIft/LNL4iBTZA== undefined 457F39BE-4113-4BF8-A08A-9284269E5037 ')
-# print urllib.unquote("5bTjNxhShoJ6bjaMBZOXiBTDpGfpESSKnmSMGxBxKDM_")
-# print urllib.unquote("Vq8l%2BKCLiw%3D%3D")
-# print urllib.unquote("e%3D1%26p%3D*%26s%3D0%26c%3D0%26f%3D0%26g%3D0%26t%3D0")
-# print urllib.unquote("VW8dqn%2BhPU0%3D&vt3=F8dHqKwmyeHvPd1Vp2E%3D&lg2=UtASsssmOIJ0bQ%3D%3D")
-# print "Output: ", urllib.unquote("%0D%0A%20%0D%0A%0D%0A%20%0D%0")
-# print urllib.unquote("%2500%25c8%25c1%2500%25bf%25c2%2501%25b0%25b4%2503%259d%25cd%2502%25b4%25d6%2504%25b4%25a1")
-# print urllib.unquote("%2500%25c8%25c1%2500%25bf%25c2%2501%25b0%25b4%2503%259d%25cd%2502%25b4%25d6%2504%25b4%25a1")
 # print [urlparse.unquote(urlparse.unquote("%2500%25c8%25c1%2500%25bf%25c2%2501%25b0%25b4%2503%259d%25cd%2502%25b4%25d6%2504%25b4%25a1"))]
 
 # print urllib.quote_plus(urllib.quote_plus('Hello world!'))

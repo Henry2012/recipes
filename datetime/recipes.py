@@ -59,7 +59,7 @@ date = '0401'
 #print parser.parse(date, dayfirst=True, yearfirst=False)
 print datetime.datetime.strptime(date, '%m%d')
 
-raw_input()
+#raw_input()
 
 #===============================================================================
 # convert datetime object to str object
@@ -144,6 +144,9 @@ print elapsed
 #===============================================================================
 
 print datetime.datetime.fromtimestamp(1380453355.047)
+print datetime.datetime.fromtimestamp(1402375691.388)
+print str(datetime.datetime.fromtimestamp(1402375691.388))
+raw_input()
 print datetime.date.fromtimestamp(1380453355.047)
 
 #===============================================================================

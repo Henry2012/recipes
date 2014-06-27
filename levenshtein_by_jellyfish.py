@@ -53,7 +53,7 @@ if __name__ == "__main__":
     # 若出现更多不同部分
 #     print jellyfish.jaro_winkler('创业板暴跌逾5%失1500点 个股跌停潮', '创业板暴跌逾5%失1500点 个股跌停潮逾50股跌停')
     
-    print jellyfish.jaro_winkler('地产股早盘涨跌互现 华业地产涨近6%', '地产股涨跌互现 中体产业涨4.42%')
+#     print jellyfish.jaro_winkler('地产股早盘涨跌互现 华业地产涨近6%', '地产股涨跌互现 中体产业涨4.42%')
     
 #     券商股盘中上扬 兴业证券涨1.60%
 #     券商股盘中震荡上扬 兴业证券涨5.5%
@@ -66,7 +66,11 @@ if __name__ == "__main__":
     
     # use checksums
     # 即使只是标点的差异，print的结果差别也很大。
-    import hashlib
-    print hashlib.md5("创业板暴跌逾5%失1500点 个股跌停潮").hexdigest()
-    print hashlib.md5("创业板暴跌4.37% 现巨阴断头铡。").hexdigest()
-    print hashlib.md5("创业板暴跌逾5%失1500点 个股跌停潮逾50股跌停").hexdigest()
+#     import hashlib
+#     print hashlib.md5("创业板暴跌逾5%失1500点 个股跌停潮").hexdigest()
+#     print hashlib.md5("创业板暴跌4.37% 现巨阴断头铡。").hexdigest()
+#     print hashlib.md5("创业板暴跌逾5%失1500点 个股跌停潮逾50股跌停").hexdigest()
+    
+    print jellyfish.levenshtein_distance('rockwell automation', 'engineeringtalk.com')
+    print jellyfish.levenshtein_distance('rockwell automation', 'softswitch.com')
+    print jellyfish.levenshtein_distance('rockwell automation', 'rockwellautomation.com')
