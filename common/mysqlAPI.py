@@ -1,10 +1,12 @@
 #-*- coding:utf-8 -*-
 
 import sys
-import MySQLdb,traceback
+import ConfigParser
+import MySQLdb
+import traceback
 
-class Mysql:
-    def __init__(self,hst,prt,usr,pw,dbname):
+class Mysql(object):
+    def __init__(self, hst, prt, usr, pw, dbname):
         # initial connection and cursor
         self.connection = 0
         self.cursor = 0
@@ -13,8 +15,10 @@ class Mysql:
         # try to connect database
         try:
             # create connection to database
-            self.connection = MySQLdb.connect(host=hst,port=prt,user=usr,passwd=pw,db=dbname, charset="utf8")
-
+            self.connection = MySQLdb.connect(host=hst, port=prt,
+                                              user=usr, passwd=pw,
+                                              db=dbname, charset="utf8")
+            self.my_escape_string = self.connection.escape_string
             # create cursor
             self.cursor = self.connection.cursor()
         except Exception:
@@ -27,31 +31,32 @@ class Mysql:
         values = record.values()
 
         for i in xrange(len(values)):
-            if isinstance(values[i],str):
-                values[i] = values[i].replace("\\"," ")
-                values[i] = values[i].replace("'","\\'")
+            if isinstance(values[i], str):
+                values[i] = values[i].replace("\\", " ")
+                values[i] = values[i].replace("'", "\\'")
             else:
                 values[i] = str(values[i])
 
-        values = [x.replace("\\"," ") for x in values]
-        values = [x.replace("'","\\'") for x in values]
+        values = [x.replace("\\", " ") for x in values]
+        values = [x.replace("'", "\\'") for x in values]
 
         sqlstr = "insert into %s (%s) values('%s')" % (table, ", ".join(record.keys()), "', '".join(values))
-        print sqlstr
+        #print sqlstr
         return sqlstr
 
     def update_init(self, record, find_dic, table):
         keys = record.keys()
         values = record.values()
         for i in xrange(len(values)):
-            if isinstance(values[i],str):
-                values[i] = values[i].replace("\\"," ")
-                values[i] = values[i].replace("'","\\'")
+            if isinstance(values[i], str):
+                values[i] = values[i].replace("\\", " ")
+                values[i] = values[i].replace("'", "\\'")
             else:
                 values[i] = str(values[i])
 
-        values = [x.replace("\\"," ") for x in values]
-        values = [x.replace("'","\\'") for x in values]
+        #values = [x.replace("\\"," ") for x in values]
+        #values = [x.replace("'","\\'") for x in values]
+        values = [self.my_escape_string(x) for x in values]
 
         setstr = []
         for i in xrange(len(keys)):
@@ -66,45 +71,56 @@ class Mysql:
     def execute(self, sqlstr):
         try:
             sqlstr = sqlstr.strip()
-            if (sqlstr.startswith('insert') or
-                sqlstr.startswith('INSERT')):
-                self.cursor.execute(sqlstr)
-                corp_id = self.connection.insert_id()
-            elif (sqlstr.startswith('update') or
-                  sqlstr.startswith('UPDATE')):
-                self.cursor.execute(sqlstr)
-                corp_id = 0
-            else:
-                print '[ ERROR ] sqlstr not found'
-                corp_id = 0
+            self.cursor.execute(sqlstr)
+            # Don't have to use escape_string to the whole sqlstr,
+            # but just convert string values.
+            #sqlstr = self.my_escape_string(sqlstr)
+            
+#             if (sqlstr.startswith('insert') or
+#                 sqlstr.startswith('INSERT')):
+#                 self.cursor.execute(sqlstr)
+#             elif (sqlstr.startswith('update') or
+#                   sqlstr.startswith('UPDATE')):
+#                 self.cursor.execute(sqlstr)
+#             else:
+#                 print '[ ERROR ] sqlstr not found'
 
+        except MySQLdb.DataError:
+            print sqlstr
+            raise
+        except MySQLdb.ProgrammingError:
+            print sqlstr
+            raise
+        except MySQLdb.OperationalError:
+            print sqlstr
+            raise
+        except MySQLdb.IntegrityError:
+            print sqlstr
+            raise
         except Exception:
             traceback.print_exc()
             print "[ WARN ] processing data error"
-            #print sqlstr
-            corp_id = -1
 
-        return corp_id
-
-    def find(self,sqlstr):
+    def find(self, sqlstr):
         try:
+            # Without fetchall, the results are held in the system memory.
             self.cursor.execute(sqlstr)
         except Exception:
-            print sqlstr
+            #print sqlstr
             traceback.print_exc()
         return self.cursor.fetchall()
 
-    def findOne(self,sqlstr):
+    def findOne(self, sqlstr):
         try:
             self.cursor.execute(sqlstr)
         except Exception:
             traceback.print_exc()
         return self.cursor.fetchone()
 
-    def find_step(self,sqlstr,step):
+    def find_step(self, sqlstr, step):
         flag = 0
         while True:
-            temp = sqlstr + ' limit %s, %s' % (flag,step)
+            temp = sqlstr + ' limit %s, %s' % (flag, step)
             flag += step
             records = self.find(temp)
             if len(records) == 0:
@@ -114,12 +130,11 @@ class Mysql:
 
     def insert_record(self, record, table):
         sqlstr = self.insert_init(record, table)
-
-        corp_id = self.execute(sqlstr)
-        return corp_id
+        self.execute(sqlstr)
 
     def insert_records(self, insert_keys, insert_value_package, table):
         #===============================================================================
+        # INSERT INTO <some table> (<some column names>) VALUES("<some values>");
         # 为了生成 INSERT INTO tbl_name (a,b,c) VALUES(1,2,3),(4,5,6),(7,8,9);
         # 1. 生成插入的字段
         # 2. 生成插入字段对应的所有值
@@ -135,9 +150,21 @@ class Mysql:
                     each = "%d" % each
                 elif each is None:
                     each = 'null'
+                elif (isinstance(each, basestring) and
+                      not each):
+                    each = 'null'
+                # Include FROM_UNIXTIME function in the sqlstr
+                elif (isinstance(each, basestring) and
+                      each.upper() == 'NOW()'):
+                    each = 'NOW()'
+                elif (isinstance(each, basestring) and
+                      (each.upper().startswith('FROM_UNIXTIME') or
+                       each.upper().startswith('UNIX_TIMESTAMP'))):
+                    each = each
                 elif isinstance(each, basestring):
                     # 只有字符串才可以进行如此的字符替换
-                    each = each.replace("\\"," ").replace("'","\\'")
+                    # 转化特殊的字符串
+                    each = self.my_escape_string(each)
                     each = "'%s'" % each
 
                 insert_values_in_sqlstr.append(each)
@@ -153,14 +180,14 @@ class Mysql:
         return record_id
 
     def update_record(self, corp_id, record, table):
-        sqlstr = self.update_init(record, {'id':corp_id}, table)
+        sqlstr = self.update_init(record, {'id': corp_id}, table)
         _ = self.execute(sqlstr)
 
     def update(self, find_dic, record, table):
         sqlstr = self.update_init(record, find_dic, table)
         _ = self.execute(sqlstr)
 
-    def delete(self,table, key, value):
+    def delete(self, table, key, value):
         sqlstr = "delete from %s where %s=%s" % (table, key, value)
 
         self.cursor.execute(sqlstr)
@@ -176,7 +203,6 @@ class Mysql:
             print "[ ERROR ] break the connection failed"
 
         print "[ INFO ] break the connection "
-
 
 if __name__ == "__main__":
     config = ConfigParser.ConfigParser()
